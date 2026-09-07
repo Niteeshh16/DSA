@@ -1,15 +1,23 @@
 package array;
 
 public class Dummy {
-    static void main() {
-        int[] nums = {1,2,3,1};
-        int k = 3;
+
+    static void find(int[] nums){
 
         for (int i = 0; i < nums.length; i++) {
-            for (int j = 1; j < i; j++) {
-                System.out.print("*");
+            for (int j = i+1; j < nums.length; j++) {
+                if (nums[i] == nums[j]){
+                    System.out.println(nums[j]);
+                }
             }
-            System.out.println();
+
         }
+
+
+    }
+
+    static void main() {
+        int[] nums = {2,1,3,4,1};
+        find(nums);
     }
 }
