@@ -27,7 +27,7 @@ public class FindPivotIndex {
 
         // Print right sums
         for (int i = 0; i < nums.length; i++) {
-            System.out.print(prefix[nums.length] - prefix[i + 1] + " ");
+            System.out.print(prefix[nums.length] - prefix[i+1] + " ");
         }
 
         System.out.println();
